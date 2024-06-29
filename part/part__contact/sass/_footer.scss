@@ -38,6 +38,21 @@
                             color: salmon;
                             cursor: pointer;       
                         }
+
+                        a{
+                            font-family: Livvic;
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            color: rgb(255,255,255);
+                            transition: .7s;
+                            text-decoration: none;
+
+                            &:hover{
+                                color: sienna;
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
             }
@@ -93,7 +108,6 @@
                 line-height: 25px;
                 text-align: right;
                 color: rgb(255,255,255);
-
 
             }
         }

@@ -43,6 +43,16 @@
                 border: 2px solid blue;
                 box-shadow: 0 0 20px;
             }
+
+            a{
+                text-decoration: none;
+                color: rgba(1, 47, 52, 1);
+
+                &:hover{
+                    cursor: pointer;
+                    color: blue;
+                }
+            }
         }
     }    
 }

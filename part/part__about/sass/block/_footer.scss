@@ -38,6 +38,16 @@
                             color: salmon;
                             cursor: pointer;       
                         }
+
+                        a{
+                            color: rgb(255,255,255);
+                            text-decoration: none;
+
+                            &:hover{
+                                cursor: pointer;
+                                color: salmon;
+                            }
+                        }
                     }
                 }
             }
@@ -93,7 +103,6 @@
                 line-height: 25px;
                 text-align: right;
                 color: rgb(255,255,255);
-
 
             }
         }
