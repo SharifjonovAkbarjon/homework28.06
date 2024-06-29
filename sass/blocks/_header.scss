@@ -97,6 +97,87 @@
                     }
                 }
             }
+
+            .show__sidebar{
+                display: none;
+                
+                button{
+                    border: none;
+                    width: 100%;
+                    height: 25px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .sidebar{
+                display:none;
+                flex-direction: column;
+                align-items: flex-start; 
+                justify-content: flex-start;
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 250px;
+                z-index: 999;
+                backdrop-filter: blur(100px);
+                background: rgba(44, 98, 105, 1);
+                box-shadow: -10px 0 10px rgb(0,0,0,1);
+                gap: 15px;
+                padding: 10px 20px;
+
+                .hide{
+                    display: flex;
+                    border: none;
+                    padding: 2px;
+                    background: transparent;
+                    color: rgba(255, 255, 255, 1);
+                    transition: .7s;
+
+                    &:hover{
+                        cursor: pointer;
+                        background: saddlebrown;
+                    }
+                }                
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    list-style: none;
+                    
+                    li{
+                        width: 100%;
+                        color: rgba(255, 255, 255, 1);
+                        transition: .7s;
+
+                        &:hover{
+                            cursor: pointer;
+                            color: sienna;
+                        }
+                    }
+                }
+
+                .sidebar__btn{
+                    display: flex;
+                    padding: 6px;
+                    border-radius: 30px;
+                    border: 2px solid white;
+                    background: transparent;
+                    color: white;
+                    transition: .7s;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: sienna;
+                        border: 2px solid sienna;
+                        box-shadow: 0 0 20px ;
+                    }
+                }
+            }
         }
     }
 
@@ -544,6 +625,10 @@
     
                         }
                     }
+                }
+
+                .show__sidebar{
+                    display: flex;
                 }
             }
         }
