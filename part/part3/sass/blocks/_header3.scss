@@ -23,7 +23,11 @@
             .logo__img{
                 display: flex;
                 align-items: center;
-                
+
+                img{
+                    opacity: 0;
+                    animation: slideRight 1s ease forwards;
+                }
             }  
 
             .navbar__home{
@@ -48,7 +52,6 @@
 
                             
                         }
-
                     }
                 }
             }
@@ -213,6 +216,29 @@
     }
 
 }
+
+
+// KEYFRAMES ANIMATION
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 

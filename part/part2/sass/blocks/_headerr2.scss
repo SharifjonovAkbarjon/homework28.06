@@ -108,6 +108,13 @@
 
             .horizont{
                 display: flex;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 4px;
+                    background: rgba(246, 126, 126, 1);
+                }
             }
 
             .text{
